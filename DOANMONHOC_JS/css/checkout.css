@@ -25,7 +25,13 @@
     height: 42rem;
   }
   
-  
+  element.style {
+    background-color: #174e17;
+}
+element.style {
+  background-color: #56c927;
+  color: #1b1b1b;
+}
   /* MARKETING CONTENT
     -------------------------------------------------- */
   
