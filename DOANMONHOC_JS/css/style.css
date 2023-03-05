@@ -255,7 +255,7 @@ span{
     display: FLEX;
     justify-content: SPACE-BETWEEN;
     align-items: CENTER;
-    background-color: #00FF02;
+    background-color: #409d41;
     padding: 10px 20px;
     color: #fff;
     margin: 15px 5px;
@@ -263,7 +263,7 @@ span{
 .titleproduct h1{
     margin: 0;
     font-size: 22px;
-    background: #00FF02;
+    background: #409d41;
     color: #fff;
     display: inline-block;
 }

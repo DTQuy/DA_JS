@@ -16,7 +16,16 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="../DOANMONHOC_JS/css/checkout.css" >
 </head>
-
+<style>
+    .bg-409d41{
+        background-color: #409d41 !important;
+    }
+    .btn-search{
+        color: #f5f5f5;
+    border: 1px solid #00ff01;
+    background-color: #409d41;
+    }
+</style>
 <body>
     <!-- header -->
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
@@ -43,7 +52,7 @@
                 <form class="form-inline mt-2 mt-md-0" method="get" action="search.html">
                     <input class="form-control mr-sm-2" type="text" placeholder="Tìm kiếm" aria-label="Search"
                         name="keyword_tensanpham">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                    <button class="btn btn-search my-2 my-sm-0" type="submit">Tìm kiếm</button>
                 </form>
             </div>
             <ul class="navbar-nav px-3">
@@ -111,7 +120,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Mã khuyến mãi">
                             <div class="input-group-append">
-                                <button type="submit" class="btn btn-secondary">Xác nhận</button>
+                                <button type="submit" class="btn btn-secondary btn-search">Xác nhận</button>
                             </div>
                         </div>
 
@@ -145,16 +154,6 @@
                                 <input type="text" class="form-control" name="kh_email" id="kh_email"
                                     value="phucuong@ctu.edu.vn" readonly="">
                             </div>
-                            <div class="col-md-12">
-                                <label for="kh_ngaysinh">Ngày sinh</label>
-                                <input type="text" class="form-control" name="kh_ngaysinh" id="kh_ngaysinh"
-                                    value="11/6/1989" readonly="">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="kh_cmnd">CMND</label>
-                                <input type="text" class="form-control" name="kh_cmnd" id="kh_cmnd" value="362209685"
-                                    readonly="">
-                            </div>
                         </div>
 
                         <h4 class="mb-3">Hình thức thanh toán</h4>
@@ -177,7 +176,7 @@
                             </div>
                         </div>
                         <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" name="btnDatHang">Đặt
+                        <button class="btn btn-primary btn-lg btn-block btn-search" type="submit" name="btnDatHang">Đặt
                             hàng</button>
                     </div>
                 </div>

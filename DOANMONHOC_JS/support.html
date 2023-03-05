@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" th:href="@{/}">
+                <b>Family</b><b style="color:orange">4</b>
+            </a>
+        </div>
+    </nav>
+
+    <title>Trợ giúp thắc mắc</title>
+
+</head>
+<style>
+    body{
+        font-size: 13px !important;
+        font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    }
+</style>
+<body>
+    <div class="container text-center">
+
+        <header class="row">
+            <div class="row">
+                <div class="">
+                    <h2>Trợ giúp</h2>
+                </div>
+            </div>
+        </header>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        <span style="font-size: 13pt; font-family: sans-serif;">
+                            Tôi có thể huỷ đơn hàng không?
+                        </span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <li style="list-style-type: circle">
+                            <span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;font-variant: normal;white-space: pre-wrap;"><span style="color: #000000;"><span style="font-weight: 400;"><span style="font-style: normal;"><span style="text-decoration: none;">Khi đơn hàng ở trạng thái <b>Chờ lấy hàng</b> (Người bán đang đóng gói và chuẩn bị giao cho tài xế), yêu cầu sẽ cần được Người bán phản hồi. <b>Người bán chấp nhận yêu cầu hủy đơn:</b> Đơn hàng sẽ được hủy ngay lập tức. <b>Người bán từ chối yêu cầu hủy đơn:</b> Đơn hàng sẽ tiếp tục được xử lý. Người mua không thể hủy trong trường hợp này dù có liên hệ bộ phận CSKH .</span></span></span></span></span></span></span>
+                        </li>
+                        <li style="list-style-type: circle">
+                            <span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;"><span style="font-style: normal;"><span style="text-decoration: none;">Người mua <b>không</b> thể hủy đơn nếu: Đơn hàng đang trong trạng thái<b>đang giao</b>. Hệ thống không còn hiển thị nút <b>Hủy đơn hàng&nbsp;</b>. Người bán không đồng ý yêu cầu hủy khi đơn hàng ở trạng thái <b>Chờ lấy hàng.</b></span></span></span></span></span></span></p>
+                            <div style="list-style-type: disc;">&nbsp;</div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <span style="font-size: 13pt; font-family: sans-serif;">
+                            Đơn hàng đã giao thành công nhưng tôi chưa nhân được sản phẩm?
+                        </span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;font-variant: normal;white-space: pre-wrap;"><span style="color: #000000;"><span style="font-weight: 400;"><span style="font-style: normal;"><span style="text-decoration: none;">Nếu vẫn còn trong khoảng thời gian 1 giờ tính từ lúc trạng thái đơn hàng đã giao thành công, mong bạn vui lòng chờ trong khoảng 15p-30p để tài xế giao đến bạn</span></span></span></span></span></span></span></li>
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;"><span style="font-style: normal;"><span style="text-decoration: none;">Nếu đã quá thời gian được nếu trên mà bạn vẫn chưa nhận được sản phẩm, hãy <b>gọi đến bộ phận CSKH</b> để nhân viên xử lý và giao sản phẩm nhanh nhất đến cho bạn</span></span></span></span></li>
+                        <div style="list-style-type: disc;">&nbsp;</div></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <span style="font-size: 13pt; font-family: sans-serif;">
+                            Quy trình trả sản phẩm của Shop?
+                        </span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;font-variant: normal;white-space: pre-wrap;"><span style="color: #000000;"><span style="font-weight: 400;"><span style="font-style: normal;"><span style="text-decoration: none;">Shop khuyến khích Người mua nên gọi bên bộ phận CSKH liên hệ trao đổi với nhau nhanh nhất để nhận được <b>giải quyết và lý do tại sao trả sản phẩm.</b></span></span></span></span></span></span></li>
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;">Người mua có thể trả sản phẩm trong 24 giờ được tính từ lúc giao hàng thành công. Trước khi trả sản phẩm, người mua cần <b>giữ lại hoá đơn</b> và <b>để lại sản phẩm trong hộp.</b></span></span></span></span></li>
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;">Trong quá trình gọi để giải quyết vấn đề, Người mua cần phải nói <b>lý do trả sản phẩm.</b> Bên Shop chỉ <b>nhận lại sản phẩm khi:</b> sản phẩm <b>không đúng yêu cầu Người mua đặt</b>, sản phẩm có <b>mùi thiu-thối-hư</b>, sản phẩm đã bị <b>biến dạng trong quá trình giao.</b></span></span></span></span></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        <span style="font-size: 13pt; font-family: sans-serif;">
+                            Tôi không thể đăng ký hoặc đăng nhập vào Shop được?
+                        </span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;font-variant: normal;white-space: pre-wrap;"><span style="color: #000000;"><span style="font-weight: 400;"><span style="font-style: normal;"><span style="text-decoration: none;"> Hiện tại bên Shop chỉ quy định <b>một số điện thoại, một gmail chỉ có thể liên kết hoặc tạo duy nhất</b> bên Shop.</span></span></span></span></span></span></li>
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;"> Trường hợp 1: Bạn đăng nhập không được, có thể là tài khoản nãy <b>đã được đăng ký trước đó</b> và bạn nhập sai mật khẩu.</span></span></span></span></li>
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;"> Trường hợp 2:Có thể là tài khoản của bạn <b>đã bị khoá</b> do một vài quy định bên Shop.</span></span></span></span></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        <span style="font-size: 13pt; font-family: sans-serif;">
+                            Tại sao tài khoản của tôi bị khoá?
+                        </span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;font-variant: normal;white-space: pre-wrap;"><span style="color: #000000;"><span style="font-weight: 400;"><span style="font-style: normal;"><span style="text-decoration: none;">Thứ nhất: Do Người mua đã <b>đăng nhập vào nhiều tài khoản bằng cùng một thiết bị</b>. Người mua chờ 7 ngày sau đăng nhập lại giúp Shop nhá!</span></span></span></span></span></span></li>
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;"> Thứ hai: Có các <b>hành vi như: đánh giá ảo, không nhận hàng, lừa đảo</b> gây ảnh hưởng đến những Người mua khác và Shop.</span></span></span></span></li>
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;"> Thứ ba: <b>Sử dụng ngôn từ, hình ảnh thô tục</b> trong quá trình nhận hàng và đánh giá trên Shop.</span></span></span></span></li>
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;"> Thứ tư: <b>Tên</b> Người mua <b>giống các trang web thương mại, giống tên của Shop, có đường dẫn đến trang web khác.</b> </span></span></span></span></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                        <span style="font-size: 13pt; font-family: sans-serif;">
+                            Shop có mã giảm giá không?
+                        </span>
+                    </button>
+                </h2>
+
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        <li style="list-style-type: circle"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;font-variant: normal;white-space: pre-wrap;"><span style="color: #000000;"><span style="font-weight: 400;"><span style="font-style: normal;"><span style="text-decoration: none;">Tất nhiên là có chứ. Shop thường có các mã giảm giá khác nhau:</span></span></span></span></span></span></li>
+                        <li style="list-style-type: square;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;"> Đầu tiên là mã giảm giá cho người mới lần đầu đặt hàng tại Shop.</span></span></span></span></li>
+                        <li style="list-style-type: square;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;"> Những mã giảm giá cho các ngày lễ đặc biệt.</span></span></span></span></li>
+                        <li style="list-style-type: square;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: 13pt; font-family: sans-serif;;"><span style="font-style: normal;"><span style="text-decoration: none;"> Nhân dịp sinh nhật Người mua, Shop cũng có mã giá dành cho bạn đấy!</span></span></span></span></li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+
+</body>
+</html>
