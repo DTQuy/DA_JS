@@ -66,6 +66,178 @@
         width: 243.339px;
         height: 68.0416px;
     }
+    .wallet{
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .wallet_banking{
+        width: 1290px;
+        margin: 0 auto;
+    }
+
+    .baking_list{
+        list-style: none;
+        padding: 0;
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .baking_list::after{
+        position: absolute;
+        content: "";
+        width: 1290px;
+        height: 375px;
+        top: 25%;
+        left: 0;
+        right: 0;
+        bottom: 25%;
+        background-color: rgb(237, 246, 255);
+        border-radius: 16px;
+        z-index: -1;
+    }
+    .banking_item{
+        width: 385px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3) inset;
+        padding: 15px;
+        z-index: 1;
+        background-color: #fff;
+        margin-top: 50px;
+    }
+
+    .title_banking{
+        position: relative;
+        display: flex;
+        flex-basis: 1;
+    }
+    .title_banking::after{
+        position: absolute;
+        content: "";
+        width: 70px;
+        bottom: -5px;
+        height: 5px;
+        border-radius: 3px;
+        background-color: red;
+    }
+    .helppay{
+        text-align: center;
+        
+        background-color:#1693ff ;
+    }
+    .descpay{
+        display: flex;
+        width: 1290px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    .logopay{
+        text-align: start;
+        color: #1693ff;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        background: #1693ff;
+
+    }
+    .mainbanking{
+        position: relative;
+    }
+   
+    .mainbanking p{
+        text-align: start;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .mainpay{
+
+    }
+    .accountBanking{
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+        padding: 15px;
+        z-index: 1;
+        position: relative;
+    }
+    .accountBanking::after{
+        position: absolute;
+        content: "";
+        width: 90%;
+        top: -5px;
+        background-color:  rgb(237, 246, 255);
+        height: 145px;
+        border-radius: 15px; 
+        z-index: -1;
+    }
+    .accountBanking img{
+        width: 250px;
+    }
+    .infopay{
+        float: left;
+        text-align: start;
+    }
+    .infopay span{
+        margin-bottom: 5px;
+    }
+    .name_banking{
+
+    }
+    .qr_code button{
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background: #00ff01;
+        color: #000;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .momo{
+        width: 100%;
+        text-align: center;
+    }
+    .vimomo{
+        width: 1290px;
+        display: inline-block;
+        padding: 25px 0;
+    }
+    .huongdan{
+        width: 600px;
+        display:inline-block;
+    }
+    .titlehuongdan{
+
+    }
+    .logomomo{
+
+    }
+    .stepslist{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .stepsitem{
+        text-align: start;
+    }
+    .stepsitem span{
+        font-family: "Muli-Black.ttf";
+        color: rgb(200, 41, 127);
+        font-size: 18px;
+        font-weight: 600;
+        margin: 5px 0;
+        line-height: 1.4;
+    }
+    .stepsitem p{
+        font-family: "Muli-Black.ttf";
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px 0;
+        line-height: 1.4;
+    }
+
 </style>
 <body>
     <!-- header -->
@@ -105,6 +277,117 @@
         </div>
         <div class="imghelp">
             <img src="./img/db-pay.png" alt="">
+        </div>
+    </div>
+    <div class="wallet">
+        <div class="wallet_banking">
+            <ul class="baking_list">
+                <li class="banking_item">
+                    <div class="title_banking">
+                        <h1  style="font-size: 30px; text-align: start; font-weight: 700;"> Thanh toán chuyển khoản</h1>
+                        <img src="https://cdn.pixabay.com/photo/2020/09/17/22/47/bank-card-5580506_1280.png" width="30%" height="30%" alt="">
+                    </div>
+                    <p  style="font-size: 15px; text-align: start; margin-top: 20px;"> Quý khách có thể chuyển tài khoản qua tài khoản NVRAEG</p>
+                    <div style="text-align: start;">
+                        <a style="text-decoration: none;" href="">Xem chi tiết >>></a>
+                    </div>
+                </li>
+                <li class="banking_item">
+                    <div class="title_banking">
+                        <h1  style="font-size: 30px; text-align: start; font-weight: 700;"> Thanh toán chuyển khoản</h1>
+                        <img src="https://cdn.pixabay.com/photo/2020/09/17/22/47/bank-card-5580506_1280.png" width="30%" height="30%" alt="">
+                    </div>
+                    <p  style="font-size: 15px; text-align: start; margin-top: 20px;"> Quý khách có thể chuyển tài khoản qua tài khoản NVRAEG</p>
+                    <div style="text-align: start;">
+                        <a style="text-decoration: none;" href="">Xem chi tiết >>></a>
+                    </div>
+                </li>
+                <li class="banking_item">
+                    <div class="title_banking">
+                        <h1  style="font-size: 30px; text-align: start; font-weight: 700;"> Thanh toán chuyển khoản</h1>
+                        <img src="https://cdn.pixabay.com/photo/2020/09/17/22/47/bank-card-5580506_1280.png" width="30%" height="30%" alt="">
+                    </div>
+                    <p  style="font-size: 15px; text-align: start; margin-top: 20px;"> Quý khách có thể chuyển tài khoản qua tài khoản NVRAEG</p>
+                    <div style="text-align: start;">
+                        <a style="text-decoration: none;" href="">Xem chi tiết >>></a>
+                    </div>
+                </li>
+                <li class="banking_item">
+                    <div class="title_banking">
+                        <h1  style="font-size: 30px; text-align: start; font-weight: 700;"> Thanh toán chuyển khoản</h1>
+                        <img src="https://cdn.pixabay.com/photo/2020/09/17/22/47/bank-card-5580506_1280.png" width="30%" height="30%" alt="">
+                    </div>
+                    <p  style="font-size: 15px; text-align: start; margin-top: 20px;"> Quý khách có thể chuyển tài khoản qua tài khoản NVRAEG</p>
+                    <div style="text-align: start;">
+                        <a style="text-decoration: none;" href="">Xem chi tiết >>></a>
+                    </div>
+                </li>
+                <li class="banking_item">
+                    <div class="title_banking">
+                        <h1  style="font-size: 30px; text-align: start; font-weight: 700;"> Thanh toán chuyển khoản</h1>
+                        <img src="https://cdn.pixabay.com/photo/2020/09/17/22/47/bank-card-5580506_1280.png" width="30%" height="30%" alt="">
+                    </div>
+                    <p  style="font-size: 15px; text-align: start; margin-top: 20px;"> Quý khách có thể chuyển tài khoản qua tài khoản NVRAEG</p>
+                    <div style="text-align: start;">
+                        <a style="text-decoration: none;" href="">Xem chi tiết >>></a>
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="helppay">
+        <div class="descpay">
+            <div  style="text-align: start;" class="logopay">
+                <img  src="./img/helppay.png" alt="">
+            </div>
+            <div class="mainbanking">
+               <h1>Thanh toán chuyển khoản</h1>
+               <p class="mainpay">
+                Quý khách hàng có thể thanh toán đơn hàng bằng cách chuyển khoản qua tài khoản của GEARVN tại ngân hàng dưới đây và liên hệ <span style="color: #e1190d;">Hotline 1800 6975</span> (miễn phí) để xác nhận thông tin.
+               </p>
+               <div class="accountBanking">
+                    <img src="https://w.ladicdn.com/s500x400/5bf3dc7edc60303c34e4991f/logo_mb_new-20211231035104.png" alt="">
+                    <div class="infopay">
+                        <span class="name_banking">Ngân hàng Thương mại Cổ phần Quân đội</h2>
+                            <br>
+                        <span>Chủ tài khoản: Nguyễn Công Mạnh Tân</span>
+                        <br>
+                        <span>Chi nhánh: Đông Sài Gòn - PGD: Quận 10</span>
+                        <br>
+                        <span>Số tài khoản: 6201.000.1324.313</span>
+                    </div>
+                    
+               </div>
+               <div class="qr_code">
+                <button>Quét mã QR để thanh toán</button>
+                <img src="https://w.ladicdn.com/s550x550/5bf3dc7edc60303c34e4991f/gaming-gear-landing-57-20220110100023.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="momo">
+        <div class="vimomo">
+            <div class="huongdan">
+                <div class="titlehuongdan">
+                    <img src="" alt="" class="logomomo">
+                    <h1>Thanh toán qua Ví MOMO</h1>
+                </div>
+                <ul class="stepslist">
+                    <li class="stepsitem">
+                        <span>Bước 1</span>
+                        <br>
+                        <p>Sau khi chọn hình thước thanh tonas qua ứng dụng MOMO, hệ thống sẽ chuyển sang giao diện thanh toán của MOMO</p>
+                    </li>
+                    <li class="stepsitem">
+                        <span>Bước 2</span>
+                        <br>
+                        <p>Mở ứng dụng ví MOMO của bạn quét mã QR được cho để hoàn tất việc đặt hàng.</p>
+                    </li>
+                </ul>
+                <p>Vậy là bạn đã hoàn thành việc mua hàng online tại NVRAEG thật dễ dàng và tiện lợi.</p>
+            </div>
+                <img src="https://w.ladicdn.com/s1050x800/5bf3dc7edc60303c34e4991f/thanh-toan-18-20210809034343.png" width="50%" alt="">
         </div>
     </div>
     <!-- end header -->
