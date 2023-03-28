@@ -997,7 +997,7 @@ h1.pagetitle {
 }
 
 #product {
-  margin-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .thumbnails.mainimage li.span5 {
@@ -1168,14 +1168,15 @@ ul.productpagecart li {
   display: inline-block;
   background: url(../img/productpageicon.png) no-repeat 0 0;
   margin-right: 10px;
-  height: 66px
+  height: 50px;
 }
 
 .productpagecart a {
   background: #F25C27 url(../img/productpageicon.png) no-repeat 0 0;
-  color: #fff;
-  padding: 15px 15px 15px 60px;
-  font-size: 18px;
+    color: #fff;
+    padding: 15px 15px 15px 55px;
+    border-radius: 20px;
+    font-size: 19px;
 }
 
 .productpagecart li a.cart {
@@ -1249,8 +1250,9 @@ ul.productpagecart li {
 }
 
 h1.productname {
-  color: #f25c27;
+  color: #000;
   font-size: 26px;
+  font-family: 800;
   margin: 0 0 20px 0;
   background: none;
   line-height: auto !important;

@@ -1,104 +1,235 @@
+<style>
+  .share_social{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  .share_social ion-icon{
+    margin-right: 8px;
+
+    cursor: pointer;
+  }
+  .share_social ion-icon:first-child{
+    margin-left: 8px;
+  }
+  .item-desc{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  .item-desc li{
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  .item-desc li:first-child{
+    font-size: 25px;
+    margin: 25px 0;
+  }
+  .item-desc li span:first-child{
+    display: inline-block;
+    min-width: 100px;
+  }
+  .helppay{
+    border-top: 1px solid #dcdcdc;
+  }
+  .helplist{
+    margin: 20px 0;
+    list-style: none;
+  }
+  .helplist li{
+    margin: 10px 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .helplist li:hover{
+    cursor:help ;
+  }
+  .helplist li ion-icon{
+    margin-right: 5px;
+  }
+
+</style>
 <% include layout/header.ejs %>
-<!-- Header End -->
-  <% if (data && data !== null && data !== undefined) { %>
-  <script type="text/javascript">
-    document.title = '<%= data.name%>';
-  </script>
-  <% } %>}
-<div id="maincontainer">
-  <section id="product">
-    <div class="container">      
-      <!-- Product Details-->
-      <div class="row">
-       <!-- Left Image-->
-        <div class="span5">
-          <ul class="thumbnails mainimage">
-            <li class="span5">
-              <a  rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" class="thumbnail cloud-zoom" href="upload/<%= data.photo%>">
-                <img src="upload/<%= data.photo%>" alt="" title="" width="350px">
-              </a>
-            </li>
-       
-          </ul>
-       
-        </div>
-         <!-- Right Details-->
-        <div class="span7">
-          <div class="row">
-            <div class="span7">
-              <h1 class="productname"><span class="bgnone">Tên sản phẩm: <%= data.name%></span></h1>
-               <!--<h1 class="productname"><span class="bgnone">SỐ LƯỢNG: <%= data.sale1 %></span></h1> -->
-              <div class="productprice">
-                <div class="productpageprice" style= "width: 387px;">
-                   <div class="productpageprice" style="display:none ; width: 387px;">
-                    <% if(data.sale > 0) { %>
-                    <span class="spiral"></span><%= data.price%></div>
-                    <span class="1"> </span>Giá sản phẩm:<%= parseInt(data.salePrice).toLocaleString('en-us') %> </div>
-                    <% } else { %>
-                    <span class="spiral" style="display:none ; "></span><%= data.price%></div>
-                    <% } %>
-                </div>
+  <!-- Header End -->
+  <% if (data && data !==null && data !==undefined) { %>
+    <script type="text/javascript">
+      document.title = '<%= data.name%>';
+    </script>
+    <% } %>}
+
+      <div id="maincontainer">
+        <section id="product">
+          <div class="container">
+            <!-- Product Details-->
+            <div class="row" style="background: #f8f8f8;">
+              <div style="padding: 15px ;font-weight: 700; background: #f8f8f8;">
+                <span>Bạn đang ở :
+                  <a href="/" style="text-decoration: none; color: #4299d7;">Trang chủ</a>
+                  <ion-icon name="caret-forward-outline"></ion-icon>
+                  <a href="/" style="text-decoration: none; color: #4299d7;">Sản phẩm</a>
+                  <ion-icon name="caret-forward-outline"></ion-icon>
+                  <span>
+                    <%= data.name%>
+                  </span>
+                </span>
               </div>
-              <ul class="productpagecart" style="margin-top: 52px;">
-                <li><a class="cart" href="/cart/add/<%= data.id %>" style= "w">Add to Cart</a>
-                </li> 
-              </ul>
-              <!-- Product Description tab & comments-->
-              <div class="productdesc">
-                <ul class="nav nav-tabs" id="myTab">
-                  <li class="active"><a href="#description">MÔ TẢ SẢN PHẨM</a>
+              <!-- Left Image-->
+              <div class="span5">
+                <ul class="thumbnails mainimage">
+                  <li class="span5">
+                    <a rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4" class="thumbnail cloud-zoom"
+                      href="upload/<%= data.photo%>">
+                      <img src="upload/<%= data.photo%>" alt="" title="" width="350px">
+                    </a>
                   </li>
-              
+                  <li style="margin: 20px 0;
+                  float: right;">
+                    <span class="share_social">Chia sẻ: 
+                    <ion-icon style="color: #3b5999;cursor: pointer;" name="logo-facebook"></ion-icon>
+                    <ion-icon style="color: #de0217;cursor: pointer;" name="logo-pinterest"></ion-icon>
+                    <ion-icon style="color: #10c2ff;cursor: pointer;" name="logo-twitter"></ion-icon>
+                  </span></li>
                 </ul>
-                <div class="tab-content">
-                  <div class="tab-pane active" id="description">
-                    <h2>Chi Tiết Sản Phẩm</h2>
-                    <%= data.description%>
+              </div>
+              <!-- Right Details-->
+              <div class="span7">
+                <div class="row" style="margin: 0 0 0 25px;">
+                  <div class="span7" style="margin: 0;">
+                    <h1 class="productname"><span class="bgnone">
+                        <%= data.name%>
+                      </span></h1>
+                    <!--<h1 class="productname"><span class="bgnone">SỐ LƯỢNG: <%= data.sale1 %></span></h1> -->
+                    <div class="productprice">
+                      <div class="productpageprice" style="display:none ; width: 387px;">
+                        <% if(data.sale> 0) { %>
+                          <span class="spiral"></span>
+                          <%= data.price%>
+                      </div>
+                      <ul class="item-desc">
+                        <li>
+                          <span class="1" > Giá: </span>
+                          <span style="color: #d0011b;font-size: 20px; font-weight: 800;"><%= parseInt(data.salePrice).toLocaleString('en-us') %> VND</span> <br>
+                        </li>
+                        <li>
+                          <span class="1" > Bảo Hiểm: </span>
+                          <span >Bảo hiểm Quyền lợi tiêu dùng</span> <br>
+                        </li>
+                        <li style="position: relative;">
+                          <span class="1" > Vận chuyển: </span>
+                          <span >Vận chuyển miễn phí <ion-icon style="position: absolute;top: 3px;;margin-left: 20px; font-size: 15px; color:#10c2ff ;" name="earth-outline"></ion-icon></span>
+                        </li>
+                      </ul>
+
+                      <% } else { %>
+                        <span class="spiral" style="display:none ; "></span>
+                        <%= data.price%>
+                      
+                    </div>
+                    <% } %>
                   </div>
+                </div>
+                <ul class="productpagecart" >
+                  <li><a class="cart" href="/cart/add/<%= data.id %>">Add to Cart</a>
+                  </li>
+                </ul>
+                <div class="helppay">
+                  <ul class="helplist">
+                    <li class="helpitem">
+                      <ion-icon name="refresh-circle-outline"></ion-icon>
+                      <span>
+                        7 ngày miễn phí trả hàng
+                      </span>
+                    </li>
+                    <li class="helpitem">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span>Hàng chính hãng 100%</span>
+                      </li>
+                    <li class="helpitem">
+                      <ion-icon name="earth-outline"></ion-icon>
+                      <span>Miễn phí vận chuyển</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Product Description tab & comments-->
+                
+              </div>
+              
+            </div>
+            <div class="productdesc">
+              <ul class="nav nav-tabs" id="myTab">
+                <!-- <li class="active"><a href="#description">MÔ TẢ SẢN PHẨM</a> -->
+                <!-- </li> -->
+
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="description">
+                  <h2>Chi Tiết Sản Phẩm</h2>
+                  <p style="text-align: justify;line-height: 1.6;"><%= data.description%></p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <% if (products !== null && products.length > 0) { %>
-  <!--  Related Products-->
-  <section id="related" class="row">
-    <div class="container">
-      <h1 class="heading1"><span class="maintext">Sản Phẩm Khác</span><span class="subtext"> See Our Most featured Products</span></h1>
-      <ul class="x`">
-        <% products.forEach(function(pro){ %>
-           <li class="span3">
-                        
-                        <div class="thumbnail">
-                          <div class="thumbnail">
-                          <% if(pro.sale > 0) { %>
-                            <span class="tooltip-test" style="background-color: red; color: white; font-size: 20px; z-index: 1000; position: absolute; top: 0; left: 0; padding: 6px 10px;">-<%= pro.sale %>%</span>
-                          <% } %>
-                         <a href="/san-pham/<%= pro.urlRewriteName%>.<%= pro.id%>.<%= pro.categoryId%>.html"><img alt="" src="upload/<%= pro.photo %>" style="font-size:10px ; height : 250px ; "></a>
+      </div>
+      </section>
+      <% if (products !==null && products.length> 0) { %>
+        <!--  Related Products-->
+        <section id="related" class="row">
+          <div class="container">
+            <h1 class="heading1"><span class="maintext">Sản Phẩm Khác</span><span class="subtext"> See Our Most featured
+                Products</span></h1>
+            <ul class="x`">
+              <% products.forEach(function(pro){ %>
+                <li class="span3">
+
+                  <div class="thumbnail">
+                    <div class="thumbnail">
+                      <% if(pro.sale> 0) { %>
+                        <span class="tooltip-test"
+                          style="background-color: red; color: white; font-size: 20px; z-index: 1000; position: absolute; top: 0; left: 0; padding: 6px 10px;">-
+                          <%= pro.sale %>%</span>
+                        <% } %>
+                          <a href="/san-pham/<%= pro.urlRewriteName%>.<%= pro.id%>.<%= pro.categoryId%>.html"><img
+                              alt="" src="upload/<%= pro.photo %>" style="font-size:10px ; height : 250px ; "></a>
 
                           <div class="pricetag" style="background:white;">
-                            <span class="spiral"style="display:none" ></span><a href="/add-cart.<%= pro.id %>" class="productcart" style="display:none">ADD TO CART</a>
-                            <a class="prdocutname" href="product.html" ><b style="color:black ;font-size: 16px ; text-transform: uppercase; text-align: center; margin: 0 0 10px 0; display: block;"><%= pro.name %></b></a>
+                            <span class="spiral" style="display:none"></span><a href="/add-cart.<%= pro.id %>"
+                              class="productcart" style="display:none">ADD TO CART</a>
+                            <a class="prdocutname" href="product.html"><b
+                                style="color:black ;font-size: 16px ; text-transform: uppercase; text-align: center; margin: 0 0 10px 0; display: block;">
+                                <%= pro.name %>
+                              </b></a>
                             <div class="price">
-                              <% if(pro.sale > 0) { %>
-                              <div class="pricenew" style="color:red ;float: right; "><%= parseInt(pro.salePrice).toLocaleString('en-us') %> <p style="color:red ;float:right;">đ</p></div>
-                              <div class="pricenew" style="color:black ;float: right; margin-right: 3px;text-decoration: line-through;"><%= parseInt(pro.price).toLocaleString('en-us') %><p style="color:black ;float: right;">đ</p></div>
-                              <% } else { %>
-                              <div class="pricenew" style="color:red ;float: right; margin-right: 12px"><%= parseInt(pro.price).toLocaleString('en-us') %></div>
-                              <% } %>
-                        </div>
-                      </div>
+                              <% if(pro.sale> 0) { %>
+                                <div class="pricenew" style="color:red ;float: right; ">
+                                  <%= parseInt(pro.salePrice).toLocaleString('en-us') %>
+                                    <p style="color:red ;float:right;">đ</p>
+                                </div>
+                                <div class="pricenew"
+                                  style="color:black ;float: right; margin-right: 3px;text-decoration: line-through;">
+                                  <%= parseInt(pro.price).toLocaleString('en-us') %>
+                                    <p style="color:black ;float: right;">đ</p>
+                                </div>
+                                <% } else { %>
+                                  <div class="pricenew" style="color:red ;float: right; margin-right: 12px">
+                                    <%= parseInt(pro.price).toLocaleString('en-us') %>
+                                  </div>
+                                  <% } %>
+                            </div>
+                          </div>
                     </div>
-                  </li>
-        <% })%>
-      </ul>
-    </div>
-  </section>
-  <% } %>
-</div>
+                </li>
+                <% })%>
+            </ul>
+          </div>
+        </section>
+        <% } %>
+          </div>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<!-- Footer -->
-<% include layout/footer.ejs %>
+
+          <!-- Footer -->
+          <% include layout/footer.ejs %>
