@@ -1,3 +1,22 @@
+<style>
+  .kodfun-geleri{
+    display: flex;
+    height: 20rem;
+    gap:1rem
+  }
+  .kodfun-geleri > div{
+    flex:1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    
+  }
+  .kodfun-geleri > div:hover{
+    flex: 5;
+  }
+</style>
 <% include layout/header.ejs %>
 <!-- Header End -->
 
@@ -6,19 +25,15 @@
   <section class="slider">
     <div class="container">
       <div class="flexslider" id="mainslider">
-        <ul class="slides">
-          <li>
-            <img src="images/KM/3.jpg"alt=""  style="height: 516px;" />
-          </li>
-          <li>
-            <img src="images/KM/slider1.png" alt="" style="height: 516px;" />
-          </li>
-          <li>
-            <img src="images/KM/5.jpg" alt="" style="height: 516px;" />
-          </li>
-          
-        </ul>
+        <div class="kodfun-geleri">
+          <div style="background-image: url(img/BANPHIM/Akko/PC98B/hinh2.png);"></div>
+          <div style="background-image: url(img/LAPTOP/ACER/Aspire3A315/hinh1.webp);"></div>
+          <div style="background-image: url(img/MANHINH/AOC/AOC-27G2-27-IPS-144Hz/hinh1.webp);"></div>
+          <div style="background-image: url(img/LINHKIENPC/TANNHIET/SE-214XT/hinh1.webp);"></div>
+          <div style="background-image: url(img/CHUOT/Asus/ROG/hinh2.webp);"></div>
+        </div>
       </div>
+      
     </div>
     
   </section>
