@@ -140,6 +140,39 @@ router.get('/gio-hang.html', async (req, res) => {
   res.render('site/cart', model);
 });
 
+
+// router.get('/dat-hang.html', async (req, res) => {
+//   const { hasExisted, cart} = getShoppingCart(req);
+
+//   if (cart.isEmpty()) {
+//     return res.redirect('/');
+//   }
+
+//   const model = {
+//     data: cart.getItemList(),
+//     products: await ProductModel.find({ isDeleted: false }).lean(),
+//     errors: null
+//   };
+  
+//   res.render('site/checkout', model);
+// });
+router.get('/dathang.html', async (req, res) => {
+  const { hasExisted, cart} = getShoppingCart(req);
+
+  const model = {
+    data: cart.getItemList()
+  };
+
+  model.products = await ProductModel.find(
+    {
+      isDeleted: false
+    }
+  ).lean();
+  
+  res.render('site/checkout', model);
+});
+
+
 router.get('/cart/add/:id', async (req, res) => {
   const docProduct = await ProductModel.findOne(
     {
@@ -186,22 +219,7 @@ router.post('/cart/update', async (req, res) => {
     isSucceed: true
   });
 });
-
-router.get('/dat-hang.html', async (req, res, next, isAdmin = true) => {
-  return Passport.requireAuth(req, res, next, false);
-}, (req, res) => {
-  if (!req.session.cart
-      || !req.session.cart.items
-      || !req.session.cart.items.length < 1) {
-    return res.redirect('/');
-  }
-
-  res.render('site/checkout', {
-    errors: null
-  });
-});
-
-router.post('/dat-hang.html', async (req, res) => {
+router.post('/dathang.html', async (req, res) => {
   const { hasExisted, cart} = getShoppingCart(req);
 
   if (hasExisted === false) {
