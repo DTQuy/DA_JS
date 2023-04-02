@@ -8,7 +8,7 @@ const UserRole = require('../constants/user-role');
 router.get('/dang-nhap.html', (req, res) => {
   const model = {
     callbackUrl: '/dang-nhap.html',
-    isLoggedIn: req.session.isLoggedIn // thêm biến isLoggedIn vào đối tượng model
+    // isLoggedIn: req.session.isLoggedIn // thêm biến isLoggedIn vào đối tượng model
   };
 
   if (req.query.returnUrl && req.query.returnUrl.length > 0) {
@@ -30,8 +30,8 @@ router.post('/dang-nhap.html', Passport.auth(), (req, res) => {
     return res.redirect('/');
   }
   else {
-    req.session.user = req.user; // lưu thông tin user vào session
-    req.session.isLoggedIn = true; // đặt biến isLoggedIn trong session là true
+    // req.session.user = req.user; // lưu thông tin user vào session
+    // req.session.isLoggedIn = true; // đặt biến isLoggedIn trong session là true
     return res.redirect(sReturnUrl);
   }
 });

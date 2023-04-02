@@ -41,7 +41,7 @@
                       <li>
                         <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="home-outline"></ion-icon>
 
-                        <a  href="/huong-dan.html">Giới thiệu</a>
+                        <a  href="/Payment.html">Giới thiệu</a>
                       </li>
                       <li>
                         <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;"name="call-outline"></ion-icon>
@@ -49,7 +49,7 @@
                       </li>
                       <li>
                       <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="newspaper-outline"></ion-icon>
-                        <a  href="/Payment.html">Bài Viết</a></li>
+                        <a  href="/huong-dan.html">Hướng dẫn thanh toán</a></li>
                       <li>
                         <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="cart-outline"></ion-icon>
                         <a class="shoppingcart" href="/gio-hang.html">Giỏ hàng</a>
@@ -68,7 +68,9 @@
                           placeholder="Tìm kiếm theo tên sản phẩm....." autocomplete="off" maxlength="50"
                           style="width: 220px; margin: -4px 60px 0 -15px; padding: 20px; border-radius: 5px;" />
                         </li>
-                        <% if (isLoggedIn) { %>
+<% var isLoggedIn = false; %>
+
+                        <% if (!isLoggedIn) { %>
                           <li>
                             <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-outline"></ion-icon>
                             <a class="" href="/dang-nhap.html">Đăng nhập</a>
