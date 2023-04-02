@@ -13,22 +13,15 @@
   <div id="maincontainer">
     <section id="product">
       <div class="container">
-        <!--  breadcrumb -->
-        <ul class="breadcrumb">
-          <li>
-            <a href="/">Home</a>
-            <span class="divider">/</span>
-          </li>
-          <li class="active">Contact</li>
-        </ul>
+       
         <!-- Contact Us-->
-        <h1 class="heading1"><span class="maintext">Contact</span><span class="subtext"> Contact Us for more</span></h1>
+        <h1 class="heading1" style="margin: 30px 0; text-align: center;"><span class="maintext">Contact</span></h1>
         <div class="row">
                   <div class="span9">
                     <form class="form-horizontal " action="" method="post">
                       <div class="container mt-4">
 
-                        <div class="py-5 text-center">
+                        <div class=" text-center">
                           <i class="fa fa-credit-card fa-4x" aria-hidden="true"></i>
                           <h2 style="font-weight: bold; font-size: 30px;">Thanh toán</h2>
                           <p class="lead">Vui lòng kiểm tra thông tin Khách hàng, thông tin Giỏ hàng trước khi Đặt hàng.
@@ -40,7 +33,7 @@
                           <div class="col-md-4 order-md-2 mb-4">
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                               <span class="text-muted">Giỏ hàng</span>
-                              <span class="badge badge-secondary badge-pill"><%= counter %> </span>
+                              <span class="badge badge-secondary badge-pill setCount" > </span>
                             </h4>
                             <ul class="list-group mb-3">
                               <% var total=0; var counter=0; if(data) { data.forEach(function(cartItem) { total+=cartItem.price; counter++; 
@@ -57,6 +50,8 @@
                                 <li class="list-group-item d-flex justify-content-between">
                                   <span>Tổng thành tiền</span>
                                   <strong><%= parseInt(total).toLocaleString('en-us') %> đ</strong>
+                                  <span class="laycount" style="display: none;"><%= counter %> </span>
+
                                 </li>
                             </ul>
 
@@ -135,3 +130,8 @@
 
   <!-- Footer -->
   <% include layout/footer.ejs %>
+  <script>
+    const Count=document.querySelector('.laycount');
+    const setCount=document.querySelector('.setCount');
+    setCount.innerHTML=Count.textContent;
+  </script>

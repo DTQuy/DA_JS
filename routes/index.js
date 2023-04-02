@@ -29,37 +29,34 @@ function getShoppingCart(req) {
 
 /* GET home page. */
 router.get('/', async (req, res) => {
-  const model = {
-    categories: [],
-    products: []
-  };
-  
-  model.categories = await CategoryModel.find(
-    {
-      isDeleted: false
-    }
-  ).lean();
+  try {
+    const model = {
+      categories: [],
+      products: [],
+      isLoggedIn: req.session.isLoggedIn,
+      user: req.session.user
+    };
 
-  model.products = await ProductModel.find(
-    {
-      isDeleted: false
-    }
-  ).lean();
+    const categories = await CategoryModel.find({ isDeleted: false }).lean();
+    const products = await ProductModel.find({ isDeleted: false }).lean();
 
-  if (model.categories && model.categories.length > 0 && model.products && model.products.length > 0) {
-    for (const x of model.categories) {
-      x.counter = 0;
-
-      for (const y of model.products) {
-        if (y.categoryId === x.id) {
-          x.counter += 1;
-        }
+    if (categories && categories.length > 0 && products && products.length > 0) {
+      for (const category of categories) {
+        category.counter = products.filter((product) => product.categoryId === category.id).length;
       }
     }
+
+    model.categories = categories;
+    model.products = products;
+
+    res.render('site/index', model);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
   }
-  
-  res.render('site/index', model);
 });
+
+
 
 router.get('/huong-dan.html', async (req, res) => {
   res.render('site/huongdan');

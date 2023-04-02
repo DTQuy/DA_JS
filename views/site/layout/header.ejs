@@ -68,14 +68,27 @@
                           placeholder="Tìm kiếm theo tên sản phẩm....." autocomplete="off" maxlength="50"
                           style="width: 220px; margin: -4px 60px 0 -15px; padding: 20px; border-radius: 5px;" />
                         </li>
-                      <li>
-                        <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-add-outline"></ion-icon>
-                        <a class="" href="/dang-ky.html">Đăng ký</a>
-                      </li>
-                      <li>
-                        <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-circle-outline"></ion-icon>
-                        <a class="" href="/dang-nhap.html" style="margin-right: 0;">Đăng nhập</a>
-                      </li>
+                        <% if (isLoggedIn) { %>
+                          <li>
+                            <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-outline"></ion-icon>
+                            <a class="" href="/dang-nhap.html">Đăng nhập</a>
+                          </li>
+                          <li>
+                            <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-add-outline"></ion-icon>
+                            <a class="" href="/dang-ky.html">Đăng ký</a>
+                          </li>
+                        <% } else { %>
+                          
+                          <li>
+                            <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="log-out-outline"></ion-icon>
+                            <a href="/dang-xuat.html">Đăng xuất</a>
+                          </li>
+                        <% } %>
+                        
+                          
+                          
+                          
+                      
                       
                     </ul>
                   </div>
