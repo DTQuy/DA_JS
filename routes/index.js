@@ -62,7 +62,7 @@ router.get('/huong-dan.html', async (req, res) => {
   res.render('site/huongdan');
 });
 
-router.get('/Payment.html', async (req, res) => {
+router.get('/gioithieu.html', async (req, res) => {
   res.render('site/Payment');
 });
 
@@ -291,11 +291,11 @@ router.get('/tim-kiem.html', async (req, res) => {
   res.render('site/tim-kiem', model);
 });
 
-router.get('/huong-dan.html', async (req, res) => {
+router.get('/huongdan.html', async (req, res) => {
   res.render('site/huongdan');
 });
 
-router.get('/security.html', async (req, res) => {
+router.get('/lienhe.html', async (req, res) => {
   res.render('site/security');
 });
 
