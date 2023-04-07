@@ -819,8 +819,15 @@ ul.categorymenu>li ul>li img {
   color: #96979d;
 }
 
+#featured .thumbnails li {
+  transition: transform linear 0.2s;
+  will-change: transform;
 
-#featured .thumbnails li:hover .thumbnail img,
+}
+#featured .thumbnails li:hover{
+  transform: translateY(-3px);
+}
+
 #latest .thumbnails li:hover .thumbnail img,
 #related .thumbnails li:hover .thumbnail img,
 #category .thumbnails li:hover .thumbnail img,

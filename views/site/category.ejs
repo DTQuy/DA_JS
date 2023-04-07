@@ -1,5 +1,12 @@
 <% include layout/header.ejs %>
-
+<style>
+  .prdocutname {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+</style>
 <div id="maincontainer">
   <section id="product">
     <div class="container">
@@ -54,7 +61,13 @@
                           <a href="/san-pham/<%= pro.urlRewriteName%>.<%= pro.id%>.<%= pro.categoryId%>.html"><img alt="" src="upload/<%= pro.photo %>" style="font-size:10px ; height : 300px ;"></a>
                           <div class="pricetag" style="background:white;">
                             <span class="spiral"style="display:none" ></span><a href="/add-cart.<%= pro.id %>" class="productcart" style="display:none">ADD TO CART</a>
-                            <a class="prdocutname" href="product.html" style="color:black ;font-size: 16px ;"><%= pro.name %></a>
+                            <a class="prdocutname" href="product.html" style="color:black ;font-size: 16px ;display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            line-height: 1.5;
+                            overflow: hidden;">
+                              <%= pro.name %>
+                              </a>
                             <div class="price">
                             <!-- parseInt(x).toLocaleString('en-us') cho số tiền có dấu phẩy-->
                               <% if(pro.sale > 0) { %>

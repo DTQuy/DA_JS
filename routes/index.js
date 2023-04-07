@@ -27,7 +27,6 @@ function getShoppingCart(req) {
   };
 }
 
-/* GET home page. */
 router.get('/', async (req, res) => {
   try {
     const model = {
@@ -49,14 +48,17 @@ router.get('/', async (req, res) => {
     model.categories = categories;
     model.products = products;
 
+    // Ẩn nút đăng nhập và đăng ký nếu đã đăng nhập thành công
+    if (req.session.isLoggedIn) {
+      model.isLoggedIn = true;
+    }
+
     res.render('site/index', model);
   } catch (error) {
     console.error(error);
     res.status(500).send('Internal Server Error');
   }
 });
-
-
 
 router.get('/huong-dan.html', async (req, res) => {
   res.render('site/huongdan');

@@ -4,23 +4,31 @@ const BcryptJs = require('bcryptjs');
 const Passport = require('../modules/passport');
 const UserModel = require('../models/user');
 const UserRole = require('../constants/user-role');
+const CategoryModel = require('../models/category');
+const ProductModel = require('../models/product');
 
+// Thêm đoạn mã xử lý router GET để hiển thị trang đăng nhập
 router.get('/dang-nhap.html', (req, res) => {
   const model = {
     callbackUrl: '/dang-nhap.html',
-    // isLoggedIn: req.session.isLoggedIn // thêm biến isLoggedIn vào đối tượng model
+    isLoggedIn: req.session.isLoggedIn // thêm biến isLoggedIn vào đối tượng model
   };
 
   if (req.query.returnUrl && req.query.returnUrl.length > 0) {
     model.callbackUrl = `${model.callbackUrl}?returnUrl=${req.query.returnUrl}`;
   }
 
-  res.render('site/login', model);
+  if (req.session.isLoggedIn) {
+    // Nếu đã đăng nhập thành công thì chuyển hướng về trang chủ và ẩn nút đăng nhập và đăng ký
+    res.redirect('/');
+  } else {
+    res.render('site/login', model);
+  }
 });
 
-
+// Thêm đoạn mã xử lý router POST để xử lý đăng nhập
 router.post('/dang-nhap.html', Passport.auth(), (req, res) => {
-  let sReturnUrl = undefined;
+  const sReturnUrl = undefined;
 
   if (req.query.returnUrl && req.query.returnUrl.length > 0) {
     sReturnUrl = decodeURI(req.query.returnUrl);
@@ -30,11 +38,16 @@ router.post('/dang-nhap.html', Passport.auth(), (req, res) => {
     return res.redirect('/');
   }
   else {
-    // req.session.user = req.user; // lưu thông tin user vào session
-    // req.session.isLoggedIn = true; // đặt biến isLoggedIn trong session là true
+    req.session.user = req.user; // lưu thông tin user vào session
+    req.session.isLoggedIn = true; // đặt biến isLoggedIn trong session là true
     return res.redirect(sReturnUrl);
   }
 });
+
+
+
+
+
 
 
 router.get('/dang-xuat.html', (req, res) => {

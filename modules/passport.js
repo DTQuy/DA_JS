@@ -16,7 +16,7 @@ Passport.use(
       ).lean();
 
       if (!docUser || !docUser.id) {
-        return done(null, false, { message: 'Tài Khoản Không Đúng2' });
+        return done(null, false, { message: 'Sai tên đăng nhập hoặc mật khẩu' });
       }
       else {
         require('bcryptjs').compare(password, docUser.password, (err, data) => {
@@ -24,7 +24,7 @@ Passport.use(
             throw err;
           }
           else if (!data) {
-            return done(null, false, { message: 'Tài Khoản Không Đúng1' });
+            return done(null, false, { message: 'Sai tên đăng nhập hoặc mật khẩu' });
           }
           
           return done(null, docUser);
@@ -51,22 +51,16 @@ Passport.deserializeUser(async (id, done) => {
   }
 });
 
-module.exports.auth = () => {
-  // return Passport.authenticate(
-  //   'local', {
-  //     successRedirect: '/admin',
-  //     failureRedirect: '/admin/dang-nhap.html',
-  //     failureFlash: true
-  //   }
-  // );
+module.exports.auth = (returnUrl) => {
   return Passport.authenticate(
     'local', {
-      // successRedirect: '/',
-      failureRedirect: '/dang-nhap.html',
+      successRedirect: returnUrl || '/',
+      failureRedirect: '/',
       failureFlash: true
     }
   );
 };
+
 
 module.exports.requireAuth = async (req, res, next, checkAdmin = true) => {
   let bIsValid = false;
