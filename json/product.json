@@ -1,21 +1,5 @@
 [{
   "_id": {
-    "$oid": "6162ea49e8f08f31644b0a22"
-  },
-  "id": 122,
-  "name": "Túi Du Lịch Motowolf 90 Lít",
-  "urlRewriteName": "tui-du-lich-motowolf-90-lit",
-  "categoryId": 10,
-  "description": "Túi Du Lịch Motowolf 90 Lít là thương hiệu của Motowolf rất gần gũi và cũng xa lạ gì với các anh em biker. Thương hiệu này dường như là một thương hiệu chống nước cao cấp và có độ bền tuyệt đối.\r\n\r\n \r\n\r\nTúi  chống nước cao cấp giúp chúng ta thuận tiện hơn khi gặp trời mưa dù lớn hay nhỏ cũng không sợ phải ướt đồ bên trong.\r\n\r\n \r\n\r\nTúi có thể xách, cầm tay, đéo chéo rất gọn gàng, còn có thể treo trên xe gắn trên xe một cách thuận tiện.\r\n\r\nTúi có thể chịu tải lên đến 200kg , chất liệu là nylong chống thấm nước 100%.\r\n\r\n\r\n\r\nTúi Có logo phản quang ban đêm giúp chúng ta an toàn hơn khi đi du lịch vào buổi tối.\r\n\r\nỨng dụng được nhiều chức năng balo đi biển,túi đựng vật dụng gắn trên xe máy…..\r\n\r\n\r\n\r\nNgoài ra, túi còn có thể tích lên đến 90Lít rất thich hợp đeo theo khi đi một chuyến đi dài và rất cần nhiều vật dụng cần thiết khi đi thì Túi Motowolf chắc chắn sẽ là sự lựa chọn tốt nhất cho các anh em phượt\r\n\r\nTúi Motowolf  90 Lít đã có mặt tại shop Bikersaigon mời các bạn có thể đến xem.",
-  "price": 835000,
-  "sale": 0,
-  "isDeleted": true,
-  "salePrice": 835000,
-  "photo": "1633872515221_tui-du-lich-motowolf-vang-90l.jpg",
-  "__v": 0,
-  "sale1": 0
-},{
-  "_id": {
     "$oid": "6427220c02d6676130d81167"
   },
   "id": 123,
@@ -25,7 +9,7 @@
   "description": "Một trong những chiếc laptop giá rẻ dành cho học sinh sinh viên và nhân viên không thể không nhắc đến là Acer Aspire 3 A315 59 321N. \r\n          Thiết kế nhỏ gọn, hoàn thiện từng chi tiết, cấu hình mạnh đáp ứng các yêu cầu học tập và làm việc mỗi ngày. \r\n          Hứa hẹn sẽ là sản phẩm laptop văn phòng giá tốt dành cho nhiều người.",
   "price": 11999000,
   "sale": 16,
-  "isDeleted": false,
+  "isDeleted": true,
   "salePrice": 10079160,
   "photo": "1680286220211_hinh1.webp",
   "__v": 0
@@ -584,8 +568,188 @@
   "description": "Laptop HP Pavilion 15 EG0513TU 46M12PA có kích thước màn hình 15.6 inch, độ dày chỉ 17.9 mm và cân nặng 1.75 kg.\r\n          Với kích thước mỏng nhẹ này bạn hoàn toàn có thể cầm máy bằng 1 tay dễ dàng, phù hợp với những ai thường xuyên thay đổi vị trí làm việc.",
   "price": 13990000,
   "sale": 0,
-  "isDeleted": false,
+  "isDeleted": true,
   "salePrice": 13990000,
   "photo": "1680289987750_hinh1.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312b6c73899042a4fa4afb"
+  },
+  "id": 124,
+  "name": "MSI GeForce RTX 3070 Ventus Plus 3X OC 8G (LHR)",
+  "urlRewriteName": "msi-geforce-rtx-3070-ventus-plus-3x-oc-8g-(lhr)",
+  "categoryId": 15,
+  "description": "Model\tGeForce RTX™ 3070 VENTUS 3X PLUS 8G OC LHR\r\nGPU\tNVIDIA GeForce RTX 3070\r\nGiao diện\tPCI Express Gen 4\r\nCore Clocks\t1755 MHz\r\nNhân CUDA\t5888\r\nTốc độ bộ nhớ\t14 Gbps\r\nBộ nhớ\t8GB GDDR6\r\nBUS bộ nhớ\t256-bit\r\nĐầu ra\tDisplayPort x 3 (v1.4a)\r\nHDMI x 1 (Hỗ trợ 4K @ 120Hz như được chỉ định trong HDMI 2.1)\r\nHỗ trợ HDCP\tCó\r\nĐiện năng tiêu thụ\t220 W\r\nĐầu nối nguồn\t8-pin x 2\r\nPSU đề xuất\t650 W\r\nKích thước card\t305 x 121 x 52 mm\r\nTrọng lượng\t992g \r\nDirectX\t12 API\r\nOpenGL\t4.6\r\nHiển thị tối đa\t4\r\nSẵn sàng cho VR\tCó\r\nCông nghệ G-SYNC®\tCó\r\nĐồng bộ hóa theo chiều dọc thích ứng\tCó\r\nĐộ phân giải tối đa kỹ thuật số\t7680 x 4320",
+  "price": 12000000,
+  "sale": 5,
+  "isDeleted": false,
+  "salePrice": 11400000,
+  "photo": "1680943980047_VGA-MSI3070.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312bdf73899042a4fa4afc"
+  },
+  "id": 125,
+  "name": "VGA - ASUS Dual GeForce RTX 2060 OC EVO 6GB GDDR6",
+  "urlRewriteName": "vga---asus-dual-geforce-rtx-2060-oc-evo-6gb-gddr6",
+  "categoryId": 15,
+  "description": "GPU\tNVIDIA® GeForce RTX™ 2060\r\nNhân CUDA\t1920\r\nChuẩn giao tiếp\tPCI Express 3.0\r\nXung nhịp GPU\tChế độ OC: GPU Boost Clock : 1785 MHz - GPU Base Clock : 1395 MHz\r\nChế độ Gaming: GPU Boost Clock : 1755 MHz - GPU Base Clock : 1365 MHz\r\nTốc độ bộ nhớ\t14000 MHz\r\nBộ nhớ\t6GB GDDR6\r\nGiao thức bộ nhớ\t192-bit\r\n \r\n\r\nCổng xuất hình\r\n\r\nDVI-D: Có x 1 \r\n\r\nHDMI: Có x 2 (HDMI 2.0b)\r\n\r\nDisplayPort: Có x 1 (DisplayPort 1.4)\r\n\r\nHỗ trợ HDCP: Có (2.2)\r\n\r\nHỗ trợ NVlink/ Crossfire\tKhông\r\nCông suất nguồn yêu cầu\tTừ 500W\r\nKết nối nguồn\t1 x 8-pin\r\nKích thước (DxRxC)\t9.53 \" x 5.12 \" x 2.09 \" Inch\r\n24.2 x 13 x 5.3 Centimeter\r\nKhe cắm\t2.5 slot\r\nOPENGL hỗ trợ\t4.6\r\nSố màn hình tối đa\t4\r\nĐộ phân giải tối đa\t7680×4320 (8K)",
+  "price": 9990000,
+  "sale": 8,
+  "isDeleted": false,
+  "salePrice": 9190800,
+  "photo": "1680944095732_VGA-2060OC.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312c6873899042a4fa4afd"
+  },
+  "id": 126,
+  "name": "ASUS ROG Strix GeForce RTX​ 3070 Ti O8G GDDR6X",
+  "urlRewriteName": "asus-rog-strix-geforce-rtx​-3070-ti-o8g-gddr6x",
+  "categoryId": 15,
+  "description": "Nhân đồ họa\r\n\r\n\r\nNVIDIA® GeForce RTX™ 3070 Ti\r\n\r\nBăng thông\r\n\r\n\r\nPCI Express 4.0\r\n\r\nOpenGL\r\n\r\nOpenGL®4.6\r\n\r\nBộ nhớ\r\n\r\n8GB GDDR6X\r\n\r\nTốc độ\r\n\r\nChế độ OC - 1875 MHz (Xung tăng cường)\r\nChế độ Chơi Game - 1845 MHz (Xung tăng cường)\r\n\r\nCUDA\r\n\r\n\r\n6144\r\n\r\nTốc độ bộ nhớ\r\n\r\n19 Gbps\r\n\r\nGiao diện bộ nhớ\r\n\r\n256-bit\r\n\r\nĐộ phân giải\r\n\r\nĐộ phân giải Kỹ thuật Số Tối đa 7680 x 4320\r\n\r\nCổng kết nối\r\n\r\nCó x 2 (HDMI 2.1) \r\n\r\nCó x 3 (Native DisplayPort 1.4a)\r\n\r\nHỗ trợ HDCP Có (2.3)\r\n\r\nHỗ trợ hiển thị tối đa\r\n\r\n4\r\n\r\nHỗ trợ NVlink / Crossfire\r\n\r\nNo\r\n\r\nPhụ kiện\r\n\r\n1 x ROG Velcro Hook & Loop\r\n1 x Thẻ bộ sưu tập\r\n1 x Hướng dẫn thiết lập nhanh\r\n\r\nKích thước\r\n\r\n\r\n318.5 x 140.1 x 57.78 mm\r\n12.53 x 5.51 x 2.27 inch\r\n\r\nPSU được đề xuất\r\n\r\n750W\r\n\r\nĐầu nối nguồn\r\n\r\n3 x 8-pin\r\n\r\nKhe cắm\r\n\r\n\r\nKhe 2.9",
+  "price": 29990000,
+  "sale": 20,
+  "isDeleted": false,
+  "salePrice": 23992000,
+  "photo": "1680944232073_3070TI.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312ce273899042a4fa4afe"
+  },
+  "id": 127,
+  "name": "ASUS ROG Strix GeForce RTX 3080 Ti Gaming OC Edition 12GB",
+  "urlRewriteName": "asus-rog-strix-geforce-rtx-3080-ti-gaming-oc-edition-12gb",
+  "categoryId": 15,
+  "description": "Công nghệ đồ họa\tNVIDIA® GeForce RTX™ 3080 Ti\r\nBus tiêu chuẩn\tPCI Express 4.0\r\nOpenGL\tOpenGL®4.6\r\nBộ nhớ\t12GB GDDR6X\r\nEngine Clock\tOC mode :  1845 MHz (Boost Clock)\r\nGaming mode : 1815  MHz (Boost Clock)\r\nNhân CUDA\t10240\r\nTốc độ bộ nhớ\t19 Gbps\r\nGiao thức bộ nhớ\t384-bit\r\nĐộ phân giải\tDigital Max Resolution 7680 x 4320\r\n\r\nCổng kết nối\tYes x 2 (Native HDMI 2.1)\r\nYes x 3 (Native DisplayPort 1.4a)\r\nHDCP Support Yes (2.3)\r\nMàn hình hỗ trợ tối đa\t4\r\nNVlink/ Crossfire Support\tKhông\r\n\r\nPhụ kiện\t1 x ROG Velcro Hook & Loop\r\n1 x ROG ruler\r\n1 x Collection card\r\n1 x Speedsetup Manual\r\nSoftware\tASUS GPU Tweak II & GeForce Game Ready Driver & Studio Driver: please download all software from the support site.\r\nKích thước\t318.5 x 140.1 x 57.78 mm\r\n12.53 x 5.51 x 2.27 inches\r\nPSU kiến nghị\t850W\r\nKết nối nguồn\t3 x 8-pin\r\nSlot\t2.9 Slot",
+  "price": 50990000,
+  "sale": 25,
+  "isDeleted": false,
+  "salePrice": 38242500,
+  "photo": "1680944354629_3080ti.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312d3073899042a4fa4aff"
+  },
+  "id": 128,
+  "name": "ASUS TUF Gaming GeForce RTX 3090 Ti 24G",
+  "urlRewriteName": "asus-tuf-gaming-geforce-rtx-3090-ti-24g",
+  "categoryId": 15,
+  "description": "Thương hiệu\tAsus\r\nBảo hành\t36 Tháng\r\nCông nghệ đồ họa\tNVIDIA® GeForce RTX™ 3090 Ti\r\nChuẩn Bus\tPCI Express 4.0\r\nOpenGL\tOpenGL®4.6\r\nBộ nhớ Video\t24 GB GDDR6X\r\nEngine Clock\tChế độ OC: 1890 MHz (Xung nhịp tăng cường)\r\nChế độ chơi game: 1860 MHz (Xung nhịp tăng cường)\r\nNhân CUDA\t10752\r\nTốc độ bộ nhớ\t21 Gb / giây\r\nGiao diện bộ nhớ\t384-bit\r\nĐộ phân giải tối đa kỹ thuật số \t7680 x 4320\r\nGiao diện\tCó x 2 (Native HDMI 2.1)\r\nCó x 3 (Native DisplayPort 1.4a)\r\nHỗ trợ HDCP Có (2.3)\r\nHỗ trợ hiển thị tối đa\t4\r\nHỗ trợ NVlink / Crossfire\tCó\r\nPhụ kiện\t1 x Thẻ bộ sưu tập\r\n1 x Sách hướng dẫn thiết lập tốc độ\r\n1 x Cáp chuyển đổi 16 chân sang 8 chân\r\nPhần mềm\tASUS GPU Tweak II & GeForce Game Ready Driver & Studio Driver: vui lòng tải xuống tất cả phần mềm từ trang web hỗ trợ.\r\nKích thước\t325,9 x 140,2 x 62,8 mm\r\n12,83 x 5,52 x 2,47 inch\r\nNguồn đề suất\r\n\r\n1000W\r\n\r\nĐầu nối nguồn\t1 x 16 pin\r\nKhe\t3,2",
+  "price": 61990000,
+  "sale": 27,
+  "isDeleted": false,
+  "salePrice": 45252700,
+  "photo": "1680944432538_3090TI.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312db173899042a4fa4b00"
+  },
+  "id": 129,
+  "name": "RAM Kingston Fury Beast 8GB 3200 DDR4 RGB (KF432C16BBA/8)",
+  "urlRewriteName": "ram-kingston-fury-beast-8gb-3200-ddr4-rgb-(kf432c16bba/8)",
+  "categoryId": 15,
+  "description": "Thương hiệu\tKINGSTON\r\nLoại RAM\tRAM PC\r\nSeries\tFury Beast RGB\r\nDung lượng\t8GB (1 x 8GB)\r\nLoại\tDDR4\r\nTốc độ\t3200 MHz\r\nĐộ trễ(CL)\tCL16-18-18\r\nHiệu điện thế\t1.35V\r\nECC\tKhông hỗ trợ\r\nTản nhiệt\tCó\r\nLED\tRGB",
+  "price": 1220000,
+  "sale": 15,
+  "isDeleted": false,
+  "salePrice": 1037000,
+  "photo": "1680944561508_RAM-KINGTOM.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312e1d73899042a4fa4b01"
+  },
+  "id": 130,
+  "name": "Ram PNY XLR8 Silver 1x8GB 3600 RGB",
+  "urlRewriteName": "ram-pny-xlr8-silver-1x8gb-3600-rgb",
+  "categoryId": 15,
+  "description": "Thông tin chung:\r\n\r\nNhà sản xuất: PNY\r\nLoại RAM: DDR4\r\nDung lượng: 8GB \r\nBảo hành: 36 tháng\r\nTình trạng: Mới",
+  "price": 1390000,
+  "sale": 10,
+  "isDeleted": false,
+  "salePrice": 1251000,
+  "photo": "1680944669117_RAM-SILVER.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312e8673899042a4fa4b02"
+  },
+  "id": 131,
+  "name": "Ram Corsair Dominator Platinum 16GB (2x8GB) RGB 3200 (CMT16GX4M2E3200C16)",
+  "urlRewriteName": "ram-corsair-dominator-platinum-16gb-(2x8gb)-rgb-3200-(cmt16gx4m2e3200c16)",
+  "categoryId": 15,
+  "description": "- Nhà sản xuất: CORSAIR\r\n- Loại RAM: DDR4\r\n- Dung lượng: 16GB \r\n- Số lượng: 2 thanh\r\n- Bus: 3200MHz\r\n- Tản nhiệt: Có\r\n- Màu: Đen\r\n- Bảo Hành: 36 Tháng",
+  "price": 4090000,
+  "sale": 9,
+  "isDeleted": false,
+  "salePrice": 3721900,
+  "photo": "1680944774281_CORSAIR 2x8G.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312ef273899042a4fa4b03"
+  },
+  "id": 132,
+  "name": "RAM Kingston Fury Beast RGB 64GB (2x32GB) bus 5600 DDR5 (KF556C40BBAK2-64)",
+  "urlRewriteName": "ram-kingston-fury-beast-rgb-64gb-(2x32gb)-bus-5600-ddr5-(kf556c40bbak2-64)",
+  "categoryId": 15,
+  "description": "Nhà sản xuất: Kingston\r\nMã sản phẩm: KF556C40BBAK2-64\r\nTình trạng: Mới \r\nBảo hành: 36 tháng",
+  "price": 14990000,
+  "sale": 25,
+  "isDeleted": false,
+  "salePrice": 11242500,
+  "photo": "1680944882940_DDR5-2x32G.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312f5473899042a4fa4b04"
+  },
+  "id": 133,
+  "name": "Case Thermaltake Divider 300 TG Snow",
+  "urlRewriteName": "case-thermaltake-divider-300-tg-snow",
+  "categoryId": 15,
+  "description": "Thông số kỹ thuật \r\n\r\nSeries\tDivider Series\r\nModel\tDivider 300 TG\r\nLoại case\tMid Tower\r\nKích thước (H X W X D)\t475 x 220 x 461 mm (18.7 x 8.66 x 18.1 inch)\r\nTrọng lượng\t8.47 kg / 18.67 lb\r\nMặt bên\tKính cường lực\r\nMàu sắc\tSnow\r\nChất liệu\tSPCC\r\nKhay ổ cứng\r\n- Dễ thay thế\t\r\n2 x 3.5\" HDD và 5 x 2.5\" hoặc tổng cộng 7 x 2.5\" SSDs\r\nKhe mở rộng\t7\r\nHệ thống tản nhiệt\tSau: 1 fan 120mm\r\nBo mạch chủ hổ trợ\t6.7” x 6.7” (Mini ITX)\r\n9.6” x 9.6” (Micro ATX)\r\n12” x 9.6” (ATX)\r\nCổng I/O\tUSB 3.1 (Gen 2) Type C x 1, USB 3.0 x 2, HD Audio x 1\r\nNguồn hổ trợ\tStandard PS2 PSU (optional)\r\nĐộ dài tối đa: 180mm\r\nQuạt hổ trợ\tTrước:\r\n- 3 x 120mm, 2 x 120mm, 1 x 120mm\r\n- 2 x 140mm, 1 x 140mm\r\nTrên:\r\n- 1 x 120mm or 1 x 140mm\r\nBên:\r\n- 2 x 120mm, 1 x 120mm\r\nSau:\r\n- 1 x 120mm\r\nRad tản nhiệt hổ trợ\tTrước:\r\n- 1 x 360mm, 1x 240mm, 1 x 120mm\r\n- 1 x 280mm or 1 x 140mm\r\nBên: 1 x 240mm, 1 x 120mm\r\nSau: 1 x 120mm\r\nChiều cao tản nhiệt CPU\t150mm\r\nĐộ dài VGA tối đa\t320mm",
+  "price": 3190000,
+  "sale": 15,
+  "isDeleted": false,
+  "salePrice": 2711500,
+  "photo": "1680944980423_CASE FULL TRANG.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64312fb773899042a4fa4b05"
+  },
+  "id": 134,
+  "name": "Tản nhiệt nước ASUS ROG RYUJIN II 360 ARGB",
+  "urlRewriteName": "tan-nhiet-nuoc-asus-rog-ryujin-ii-360-argb",
+  "categoryId": 15,
+  "description": "Tương thích\t\r\nIntel: LGA 1700, 1200, 115x, 20xx\r\nAMD: AM4, AM5, TR4*\r\nKhối nước\tKích thước: 78.15 x 87.5 x 81 mm\r\nChất liệu: Đồng\r\nQuạt\tTốc độ: 4800 RPM\r\nÁp suất không khí: 3.23 mmH2O\r\nLuồng không khí: 19.41 CFM\r\nĐộ ồn: 31 dB(A)\r\nBơm\tDung dịch: Bơm asetek thế hệ thứ 7\r\nTốc độ: 840 - 2800 RPM (+/- 10%)\r\nTốc độ tự động đầy đủ: 3600 RPM (nhiệt độ nước > 60 độ C)\r\nBộ tản nhiệt và ống\tKích thước Rad: 121 x 394 x 27 mm\r\nChất liệu Rad: Nhôm\r\nChất liệu ống: Cao su\r\nChiều dài ống: 380mm\r\nMặt hiển thị LCD\tKích thước: 3.5\"\r\nMàu sắc: 24-bit true color LCD\r\nĐộ phân giải: 320 x 240 Pixels\r\nThông tin quạt\tModel: ROG AF 12S ARGB\r\nSize: 3 quạt \r\nKích thước: 120 x 120 x 25 mm\r\nTốc độ: 600 - 2200 RPM\r\nÁp suất tĩnh: 3.38 mmH2O\r\nLuồng không khí: 70.07 CFM\r\nĐộ ồn: 36.45 dB(A)\r\nChế độ kiểm soát: PWM/DC",
+  "price": 9900000,
+  "sale": 6,
+  "isDeleted": false,
+  "salePrice": 9306000,
+  "photo": "1680945079039_TAN-ASUS.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6431301b73899042a4fa4b06"
+  },
+  "id": 135,
+  "name": "Intel Core i9 12900KS / 3.4GHz Turbo 5.5GHz / 16 Nhân 24 Luồng / 30MB / LGA 1700",
+  "urlRewriteName": "intel-core-i9-12900ks-/-3-4ghz-turbo-5-5ghz-/-16-nhan-24-luong-/-30mb-/-lga-1700",
+  "categoryId": 15,
+  "description": "Socket\tFCLGA1700\r\nDòng CPU\tCore i9\r\nCPU\tIntel® Core® i9-12900KS (Alder Lake)\r\nSố nhân\t16 (8 Performance-cores + 8 Efficient-cores)\r\nSố luồng\t24\r\nTốc độ xử lý\t3.4GHz\r\nTốc độ xử lý tối đa\t5.5GHz\r\nĐiện năng tiêu thụ\t150W (Turbo max: 241W)\r\nCông nghệ CPU\tAlder Lake\r\nBộ nhớ đệm\t30MB Intel® Smart Cache\r\nBộ nhớ hỗ trợ tối đa\t128GB\r\nLoại bộ nhớ\tDDR5, DDR4\r\nNhân đồ họa\tIntel® UHD Graphics 770",
+  "price": 21990000,
+  "sale": 10,
+  "isDeleted": false,
+  "salePrice": 19791000,
+  "photo": "1680945179094_COREI9-12900KS.png",
   "__v": 0
 }]

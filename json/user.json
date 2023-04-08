@@ -3,7 +3,7 @@
     "$oid": "5f8b0dc2e95f47cdc246dc0a"
   },
   "id": 1,
-  "fullname": "Nguyễn Cảnh Vinh",
+  "fullname": "Nguyễn Công Mạnh Tân",
   "email": "admin@gmail.com",
   "password": "$2a$16$7DNIJm6ye79xEyWDVwd88uuxZAt4LMkJ9heNIB7PD8zSlADMKFkPu",
   "roles": [
@@ -12,15 +12,14 @@
   "photo": "1632966584445_anh.jpg"
 },{
   "_id": {
-    "$oid": "5f9c4510a3de3a0c50c6ea43"
+    "$oid": "64304c9cb35ed820143a449e"
   },
-  "id": 13,
-  "fullname": "Nguyễn Phương Nam",
-  "email": "phuongnamhd00@gmail.com",
-  "password": "$2a$16$gPTLCKrP6TAcd7.z1nwCV.r24j.Xoiw8Lue/PAKj9ev41h4Bq0lMW",
+  "id": 17,
+  "fullname": "Đặng Thanh Quy",
+  "email": "dquy1514@gmail.com",
+  "password": "$2a$16$JxBBmRDGLNncfeQO88iuZefTRckRQUyOBLvMM9J8cEzyg6QT78tiy",
   "roles": [
     "CUSTOMER"
   ],
-  "__v": 0,
-  "photo": "1632975395878_chon-nghe-2.jpg"
+  "__v": 0
 }]
