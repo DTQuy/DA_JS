@@ -22,6 +22,23 @@
   <!-- fav -->
   <link rel="shortcut icon" href="assets/ico/favicon.html">
 </head>
+<style>
+  .hoverul{
+    display: none;
+  }
+  .hoverul::after{
+    position: absolute;
+    content: "";
+    top: -27px;
+    width: 130px;
+    left: 0;
+    opacity: 0;
+    height: 50px;
+  }
+  .hoverusser:hover .hoverul{
+    display: block;
+  }
+</style>
 <body>
 <!-- Header Start -->
 <header>
@@ -70,14 +87,31 @@
                         </li>
                         <% var isLoggedIn = false; %>
                         <% if (!isLoggedIn) { %>
-                          <li>
+                          <li class="hoverusser" style="position: relative;">
                             <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-outline"></ion-icon>
-                            <a class="" href="/dang-nhap.html">Đăng nhập</a>
+                            <span style="color: #fff;">Tài Khoản</span>
+                              <ul class="hoverul" style="position: absolute;
+                              background: #3b3b3b;
+                              top: 45px;
+                              margin: 0;
+                              left: 0;
+                              padding: 15px;
+                              border-radius: 7px;
+                              width: 145px;
+                              z-index: 11111;
+                              ">
+                                <li>
+                                  <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-outline"></ion-icon>
+                                  <a class="" href="/dang-nhap.html">Đăng nhập</a>
+                                </li>
+                                <li>
+                                  <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-add-outline"></ion-icon>
+                                  <a class="" href="/dang-ky.html">Đăng ký</a>
+                                </li>
+
+                              </ul>
                           </li>
-                          <li>
-                            <ion-icon style="color: #00FF02; font-size: 20px; margin-bottom: 5px;" name="person-add-outline"></ion-icon>
-                            <a class="" href="/dang-ky.html">Đăng ký</a>
-                          </li>
+                          
                           
 
                         <% } else { %>

@@ -4,7 +4,7 @@
     height: 20rem;
     gap:1rem
   }
-  .kodfun-geleri > div{
+  .kodfun-geleri > a{
     flex:1;
     border-radius: 1rem;
     background-position: center;
@@ -13,7 +13,7 @@
     transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     
   }
-  .kodfun-geleri > div:hover{
+  .kodfun-geleri > a:hover{
     flex: 5;
   }
   .tooltip-test::after{
@@ -39,11 +39,11 @@
     <div class="container">
       <div class="flexslider" id="mainslider">
         <div class="kodfun-geleri">
-          <div style="background-image: url(img/BANPHIM/Akko/PC98B/hinh2.png);"></div>
-          <div style="background-image: url(img/LAPTOP/ACER/Aspire3A315/hinh1.webp);"></div>
-          <div style="background-image: url(img/MANHINH/AOC/AOC-27G2-27-IPS-144Hz/hinh1.webp);"></div>
-          <div style="background-image: url(img/LINHKIENPC/TANNHIET/SE-214XT/hinh1.webp);"></div>
-          <div style="background-image: url(img/CHUOT/Asus/ROG/hinh2.webp);"></div>
+          <a href="/danh-muc/ban-phim.10.html" style="background-image: url(img/BANPHIM/Akko/PC98B/hinh2.png);"></a>
+          <a href="/danh-muc/laptop.8.html" style="background-image: url(img/LAPTOP/ACER/Aspire3A315/hinh1.webp);"></a >
+          <a href="/danh-muc/man-hinh.9.html" style="background-image: url(img/MANHINH/AOC/AOC-27G2-27-IPS-144Hz/hinh1.webp);"></a>
+          <a href="/danh-muc/tai-nghe.13.html" style="background-image: url(img/TAINGHE/Asus/rog/hinh1.webp);"></a>
+          <a href="/danh-muc/linh-kien.14.html" style="background-image: url(img/CHUOT/Asus/ROG/hinh2.webp);"></a>
         </div>
       </div>
       
@@ -84,7 +84,7 @@
                               line-height: 1.5;
                               overflow: hidden;"> <b><%= pro.name %></b></a>
                     
-                            <div class="price">
+                            <div class="price" style="text-align: center;">
                             <!-- parseInt(x).toLocaleString('en-us') cho số tiền có dấu phẩy-->
                               <% if(pro.sale > 0) { %>
                               <div class="pricenew" style="color:#00ff02 ;float: right; "><%= parseInt(pro.salePrice).toLocaleString('en-us') %> <p style="color:#00ff02 ;float:right;">đ</p></div>

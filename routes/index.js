@@ -73,27 +73,27 @@ router.get('/dangki.html', async (req, res) => {
   res.render('site/dangki');  
 });
 
-router.get('/danh-muc/:name.:id.html', async (req, res) => {
-  const model = {
-    categories: [],
-    products: []
-  };
-  
-  model.categories = await CategoryModel.find(
-    {
-      isDeleted: false
-    }
-  ).lean();
+  router.get('/danh-muc/:name.:id.html', async (req, res) => {
+    const model = {
+      categories: [],
+      products: []
+    };
+    
+    model.categories = await CategoryModel.find(
+      {
+        isDeleted: false
+      }
+    ).lean();
 
-  model.products = await ProductModel.find(
-    {
-      categoryId: req.params.id,
-      isDeleted: false
-    }
-  ).lean();
-  
-  res.render('site/category', model);
-});
+    model.products = await ProductModel.find(
+      {
+        categoryId: req.params.id,
+        isDeleted: false
+      }
+    ).lean();
+    
+    res.render('site/category', model);
+  });
 
 router.get('/san-pham/:name.:productId.:categoryId.html', async (req, res) => {
   const model = {};
